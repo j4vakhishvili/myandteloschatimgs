@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'main';
+    src: url(fonts/Gilroy\ GEO\ Heavy.ttf);
+}
+
+body{
+    background: url(images/Background.jpg);
+    size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    margin-top: 50px;
+    background-color: #e8e8e8;
+    width: 950px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.title h1{
+    font-family: 'main', sans-serif;
+    background-image: url(images/Background.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-block-end: 0em;
+}
+
+.glass-button {
+    width: 950px;
+    height: 100px;
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: rgba(255,255,255,0.8);
+    font-family: 'main', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+ 
+.glass-button:hover {
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
+
+  .images{
+    width: 950px;
+    height: 534.37px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+    background: url(images/Background.jpg);
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+
+@media only screen and (max-width: 980px) {
+    .title{
+        margin-top: 50px;
+        width: 320px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .title h1{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .glass-button {
+        width: 320px;
+        height: 100px;
+    }
+    .images{
+        width: 320px;
+        height: 179.9px;
+    }
+}
